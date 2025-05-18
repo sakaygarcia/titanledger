@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TitanLedger – Real Capital. Crypto Payouts. Simulated Freedom.</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --accent: #10a37f;
+      --light-gray: #f5f5f5;
+      --border: #e0e0e0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    header, section, footer {
+      padding: 60px 24px;
+      max-width: 960px;
+      margin: auto;
+    }
+    header {
+      background-color: var(--light-gray);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: #555;
+    }
+    .cta {
+      margin-top: 2rem;
+    }
+    .cta a {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #0e8a6a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: white;
+      border: 1px solid var(--border);
+    }
+    table th, table td {
+      border: 1px solid var(--border);
+      padding: 12px;
+      text-align: center;
+    }
+    table th {
+      background: var(--light-gray);
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .faq-item h4 {
+      color: var(--accent);
+      margin-bottom: 5px;
+      font-size: 1.1rem;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid var(--border);
+      padding: 40px 20px;
+      background-color: var(--light-gray);
+    }
+  </style>
+</head>
+<body>
+  export default function Home() {
+  return (
+    <>
+      <header>
+        <h1>TitanLedger</h1>
+        <p>Real Capital. Crypto Payouts. Simulated Freedom.</p>
+        <div className="cta">
+          <a href="#pricing">Get Funded</a>
+          <a href="#how-it-works">How It Works</a>
+        </div>
+      </header>
+
+      <section id="how-it-works">
+        <h2 className="section-title">How It Works</h2>
+        <p>
+          1. Pay in Crypto to access your simulated account.<br />
+          2. Trade using TradeLocker.<br />
+          3. TitanLedger mirrors top-performing trades on real capital.<br />
+          4. Profits paid out in crypto.<br />
+          5. Protections via drawdown & lockout systems.
+        </p>
+      </section>
+
+      <section id="pricing">
+        <h2 className="section-title">Pricing Tiers</h2>
+        <table>
+          <thead>
+            <tr><th>Tier</th><th>Sim Account</th><th>Buffer</th><th>Fee</th><th>Total</th><th>Daily Loss Lock</th><th>Commission</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Micro</td><td>$1,000</td><td>$50</td><td>$100</td><td>$150</td><td>$25</td><td>$7/lot</td></tr>
+            <tr><td>Starter</td><td>$2,500</td><td>$125</td><td>$250</td><td>$375</td><td>$62.50</td><td>$7/lot</td></tr>
+            <tr><td>Basic</td><td>$5,000</td><td>$250</td><td>$500</td><td>$750</td><td>$125</td><td>$6/lot</td></tr>
+            <tr><td>Pro</td><td>$10,000</td><td>$500</td><td>$1,000</td><td>$1,500</td><td>$250</td><td>$6/lot</td></tr>
+            <tr><td>Advanced</td><td>$25,000</td><td>$1,250</td><td>$2,500</td><td>$3,750</td><td>$625</td><td>$5/lot</td></tr>
+            <tr><td>Executive</td><td>$100,000</td><td>$5,000</td><td>$10,000</td><td>$15,000</td><td>$2,500</td><td>$4/lot</td></tr>
+            <tr><td>Titan</td><td>$250,000</td><td>$12,500</td><td>$25,000</td><td>$37,500</td><td>$6,250</td><td>$4/lot</td></tr>
+            <tr><td>God Mode</td><td>$1,000,000+</td><td>$50,000+</td><td>$100,000+</td><td>Invite Only</td><td>$25,000+</td><td>Custom</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>© 2025 TitanLedger. All Rights Reserved. | support@titanledger.com</p>
+      </footer>
+    </>
+  );
+}
+
+</body>
+</html>
